@@ -36,7 +36,7 @@ def test_every_widget_covered():
     # rendered on their own.
     excluded = [
         twb.bootstrap_css,
-        twb.bootstrap_responsive_css,
+        #twb.bootstrap_responsive_css,
         twb.bootstrap_js,
 
         # These are base-classes that ought not to be displayed on their own.

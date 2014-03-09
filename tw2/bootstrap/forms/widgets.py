@@ -82,14 +82,13 @@ bootstrap_img = twc.DirLink(
     filename='static/bootstrap/img')
 bootstrap_css = twc.CSSLink(
     modname=__name__,
-    filename='static/bootstrap/css/bootstrap.css',
+    filename='static/bootstrap/css/bootstrap.min.css',
     resources=[bootstrap_img])
-bootstrap_responsive_css = twc.CSSLink(
-    modname=__name__,
-    filename='static/bootstrap/css/bootstrap-responsive.css')
+#bootstrap-responsive removed from 3
+bootstrap_responsive_css = None
 bootstrap_js = twc.JSLink(
     modname=__name__,
-    filename='static/bootstrap/js/bootstrap.js',
+    filename='static/bootstrap/js/bootstrap.min.js',
     resources=[twj.jquery_js],
     location='headbottom')
 
@@ -102,8 +101,9 @@ class BootstrapMixin(twc.Widget):
     # declare static resources here
     # you can remove either or both of these, if not needed
     resources = [
-        #bootstrap_js,
-        bootstrap_css, bootstrap_responsive_css,
+        bootstrap_js,
+        bootstrap_css,
+        #bootstrap_responsive_css,
     ]
 
     selector = twc.Variable("Escaped id.  jQuery selector.")

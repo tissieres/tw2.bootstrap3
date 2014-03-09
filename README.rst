@@ -17,3 +17,8 @@ Build Status
 | develop  | |develop| |
 +----------+-----------+
 
+Issues
+---------
+Update datetimepicker
+Update for Bootstrap3
+Update samples and tests
