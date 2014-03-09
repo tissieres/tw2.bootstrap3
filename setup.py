@@ -33,7 +33,7 @@ setup(
     version='2.2.0',
     description="A drop-in replacement for tw2.forms but with bootstrap!",
     long_description=open('README.rst').read(),
-    author='Moritz Schlarb, Ralph Bean & contributors',
+    author='Moritz Schlarb, Ralph Bean, Barry Loper & contributors',
     author_email='toscawidgets-discuss@googlegroups.com',
     url="http://toscawidgets.org/",
     download_url="https://pypi.python.org/pypi/tw2.bootstrap.forms/",
