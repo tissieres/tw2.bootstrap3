@@ -59,6 +59,12 @@ datepicker_js = twc.JSLink(
     filename='static/datepicker/js/bootstrap-datepicker.js',
     resources=[bootstrap_js],
     location='headbottom')
+datepicker_locale = twc.JSLink(
+    modname=__name__,
+    filename='static/datepicker/js/locales/bootstrap-datepicker.fr.js',
+    resources=[datepicker_js],
+    location='headbottom')
+    
 
 timepicker_css = twc.CSSLink(
     modname=__name__,
@@ -143,7 +149,7 @@ datefmtconverter = _DateFmtConverter()
 
 
 class CalendarDatePicker(TextField, CalendarBase):
-    resources = TextField.resources + [datepicker_js, datepicker_css]
+    resources = TextField.resources + [datepicker_js, datepicker_locale, datepicker_css]
     template = "mako:tw2.bootstrap.forms.templates.datepicker"
 
     style = twc.Param(
