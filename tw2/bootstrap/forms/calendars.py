@@ -47,21 +47,21 @@ __all__ = [
 ]
 
 
-datepicker_img = twc.DirLink(
-    modname=__name__,
-    filename='static/datepicker/img')
+# datepicker_img = twc.DirLink(
+#     modname=__name__,
+#     filename='static/datepicker/img')
 datepicker_css = twc.CSSLink(
     modname=__name__,
-    filename='static/datepicker/css/datepicker.css',
-    resources=[bootstrap_css, datepicker_img])
+    filename='static/datepicker/css/bootstrap-datepicker3.min.css',
+    resources=[bootstrap_css])
 datepicker_js = twc.JSLink(
     modname=__name__,
-    filename='static/datepicker/js/bootstrap-datepicker.js',
+    filename='static/datepicker/js/bootstrap-datepicker.min.js',
     resources=[bootstrap_js],
     location='headbottom')
 datepicker_locale = twc.JSLink(
     modname=__name__,
-    filename='static/datepicker/js/locales/bootstrap-datepicker.fr.js',
+    filename='static/datepicker/locales/bootstrap-datepicker.fr-CH.min.js',
     resources=[datepicker_js],
     location='headbottom')
     
