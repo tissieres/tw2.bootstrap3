@@ -77,13 +77,13 @@ __all__ = [
 ]
 
 
-bootstrap_img = twc.DirLink(
+bootstrap_fonts = twc.DirLink(
     modname=__name__,
-    filename='static/bootstrap/img')
+    filename='static/bootstrap/fonts')
 bootstrap_css = twc.CSSLink(
     modname=__name__,
     filename='static/bootstrap/css/bootstrap.min.css',
-    resources=[bootstrap_img])
+    resources=[bootstrap_fonts])
 #bootstrap-responsive removed from 3
 bootstrap_responsive_css = None
 bootstrap_js = twc.JSLink(
